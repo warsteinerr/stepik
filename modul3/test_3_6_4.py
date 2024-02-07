@@ -27,7 +27,6 @@ def test_entrance(browser,url):
     passw.send_keys('')
     button1 = browser.find_element(By.CSS_SELECTOR, 'button.sign-form__btn.button_with-loader' )
     button1.click()
-    time.sleep(5)
     answer = browser.find_element(By.TAG_NAME, 'textarea')
     answer.send_keys(otvet)
     button2 = browser.find_element(By. CSS_SELECTOR, 'button.submit-submission')
